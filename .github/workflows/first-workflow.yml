@@ -1,8 +1,8 @@
-name: first workflow
+name: On Push
 on: push
-jobs: 
-  build:
+jobs:
+  run-on-push:
     runs-on: ubuntu-latest
     steps:
-      - name: build
-        run: echo "build is done"
+      - name: Run on Push
+        run: echo "This ran on a push!"
